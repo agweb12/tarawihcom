@@ -1,0 +1,1357 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Old+Standard+TT&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1
+{
+    font-size: 48px;
+    line-height: 60px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+
+h2
+{
+    font-size: 36px;
+    line-height: 48px;
+    color: #121212;
+}
+
+h4
+{
+    font-size: 24px;
+    color: #12c757;
+}
+
+h6
+{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p
+{
+    font-size: 19px;
+    color: #999999;
+    margin: 15px 0 20px 0;
+}
+.section-p1
+{
+    padding: 40px 80px;
+}
+
+.section-m1
+{
+    margin: 40px 0;
+}
+
+body
+{
+    width: 100%;
+}
+
+/* ------------ Header Start ---------------*/
+#header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px 0px 80px;
+    background: linear-gradient(60deg, #1ece76, #12c757, #12863a);
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.171);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#header a img
+{
+    max-width: 80px;
+    height: auto;
+    padding: 0 0;
+    transition: 0.5s;
+}
+#header a img:hover
+{
+    transform: scale(150%, 145%) translate(15%, 25%);
+}
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li
+{
+    list-style: none;
+    padding: 10px 10px;
+    margin: 10px 12px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #1212124d;
+    border-top: 2px solid rgba(255, 255, 255, 0.918);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.918);
+    border-left: 0px solid;
+    border-right: 0px solid;
+    transition: 0.5s;
+}
+#navbar li:hover
+{
+    text-shadow: none;
+    letter-spacing: 0.17em;
+    transform: scale(108%);
+}
+#navbar li.active
+{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+#navbar li::before
+{
+    content:"";
+    position: absolute;
+    inset: 2px;
+}
+#navbar li a
+{
+    position: relative;
+    font-size: 16px;
+    z-index: 1;
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #1212124d;
+    
+}
+
+#navbar li i
+{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+#navbar li i::before
+{
+    content: "";
+    position: absolute;
+    top: -5.5px;
+    border: 2px solid white;
+    width: 15px;
+    left: 10%;
+    height: 5px;
+    background: linear-gradient(60deg, #1ece76, #12c757, #12863a);
+    transition: 0.5s;
+}
+
+#navbar li:hover i::before
+{
+    width: 10px;
+    left: 80%;
+}
+
+#navbar li i::after
+{
+    content: "";
+    position: absolute;
+    bottom: -5.5px;
+    border: 2px solid white;
+    width: 15px;
+    left: 80%;
+    height: 5px;
+    background: linear-gradient(60deg, #1ece76, #12c757, #12863a);
+    transition: 0.5s;
+}
+
+#navbar li:hover i::after
+{
+    width: 10px;
+    left: 10%;
+}
+
+
+#mobile
+{
+    display: none;
+    align-items: center;
+}
+
+#close
+{
+    display: none;
+}
+
+
+
+/*------------- PAGE LIVRE UNIQUE DETAILS ------------------*/
+
+#pagedulivre
+{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #E3E6F3;
+    background-image: url("img-livre/tarawih-francais_carre.PNG");
+    background-size: 28%;
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
+    border-bottom: none;
+    width: 100%;
+    height: 30vh;
+    transition: 1s;
+}
+#pagedulivre:hover
+{
+    background-position: 10% 100%;
+    background-size: 12%;
+    box-shadow: 0px 12px 17px #12c75775;
+}
+#pagedulivre h1
+{
+    font-size: 36px;
+    color: #121212;
+    background: rgba(255, 255, 255, 0.719);
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+#pagedulivre h1:hover
+{
+    transform: scale(120%);
+}
+#pagedulivre p.sub3
+{
+    font-size: 18px;
+    color: white;
+    background: #e21818 ;
+    padding: 10px 20px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+#pagedulivre p.sub3:hover
+{
+    transform: scale(120%);
+    letter-spacing: 5px;
+}
+#detailslivretarawih
+{
+    display: flex;
+    margin-top: 20px;
+}
+#detailslivretarawih .linksite-breadlivre
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#detailslivretarawih .breadcrumb-livre
+{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+}
+#detailslivretarawih a.breadcrumb-livre1
+{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #121212;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+#detailslivretarawih .single-pro-details a.breadcrumb-livre1:hover
+{   
+    font-size: 14px;
+    text-decoration: underline;
+}
+#detailslivretarawih .single-pro-image
+{
+    width: 100%;
+    margin-right: 50px;
+}
+
+#detailslivretarawih .single-pro-details
+{
+    width: 50%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#detailslivretarawih .single-pro-details h4
+{
+    font-size: 36px;
+    padding: 40px 0 10px 0;
+    font-weight: 800;
+}
+
+#detailslivretarawih .single-pro-details h2
+{
+    font-size: 28px;
+    font-weight: 800;
+}
+
+
+#detailslivretarawih .single-pro-details button.disponible
+{
+    font-size: 18px;
+    font-weight: 800;
+    min-width: fit-content;
+    max-width: fit-content;
+    color: #12c757;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #12c757;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: 0.5s;
+    cursor:pointer;
+}
+#detailslivretarawih .single-pro-details button.disponible:hover
+{
+    transform: scale(104%);
+    color: white;
+    letter-spacing: 3px;
+    background-color: #12c757;
+    border-radius: 12px;
+    box-shadow: 0px 7px 12px #12c757;
+    text-shadow: 1px 2px 7px  #121212;
+}
+#detailslivretarawih .single-pro-details button.indisponible
+{
+    font-size: 20px;
+    color: #999999;
+    text-decoration: none;
+    min-width: fit-content;
+    max-width: fit-content;
+    background-color: white;
+    border: 2px solid #999999;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    box-shadow: none;
+    transition: 0.5s;
+    cursor: not-allowed;
+}
+#detailslivretarawih .single-pro-details button.indisponible:hover
+{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: #999999;
+    border-radius: 15px;
+    box-shadow: 0px 7px 12px#999999b4;
+}
+
+#detailslivretarawih .single-pro-details a.telechargeable
+{
+    font-size: 16px;
+    font-weight: 700;
+    min-width: fit-content;
+    max-width: fit-content;
+    color: white;
+    text-shadow: 1px 2px 7px  #121212;
+    text-decoration: none;
+    background: linear-gradient(60deg, #1366e2, #1246f1);
+    border: 2px solid #1366e2;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    box-shadow: none;
+    cursor:pointer;
+    transition: 0.5s;
+}
+#detailslivretarawih .single-pro-details a.telechargeable:hover
+{
+    transform: scale(104%);
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    box-shadow: 0px 7px 12px #1366e2;
+}
+#detailslivretarawih .single-pro-details a.nontelechargeable
+{
+    font-size: 20px;
+    color: #999999;
+    min-width: fit-content;
+    max-width: fit-content;
+    text-decoration: none;
+    background-color: white;
+    border-bottom: 5px solid #999999;
+    border-radius: 0px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 2px;
+    margin: 20px 0px;
+    box-shadow: none;
+    transition: 0.5s ease;
+    cursor: not-allowed;
+}
+#detailslivretarawih .single-pro-details a.nontelechargeable:hover
+{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: #999999;
+    box-shadow: 0px 7px 12px#999999b4;
+}
+
+#detailslivretarawih .single-pro-details p
+{
+    line-height: 25px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+#detailslivretarawih .single-pro-details span
+{
+    color: #121212;
+    line-height: 27px;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+
+
+#deslivrestarawih .pro-container-deslivrestarawih
+{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 40px 40px 80px 40px;
+    transition: 0.5s ease;
+}
+#deslivrestarawih .pro-container-deslivrestarawih:hover
+{
+    background-size: 108%;
+}
+
+#deslivrestarawih .pro-deslivrestarawih
+{
+    min-width: 20%;
+    max-width: 250px;
+    min-height: fit-content;
+    padding: 20px 15px;
+    border-bottom: 2px solid #E3E6F3;
+    border-top: 2px solid #E3E6F3;
+    box-shadow: 20px 20px 34px #12121216;
+    margin: 15px 20px;
+    transition: 0.3s ease;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+
+#deslivrestarawih .pro-deslivrestarawih:hover
+{
+    box-shadow: 3px 3px 12px #12c757a3;
+    transform: translateX(3px);
+    transform: translateY(2px);
+    transform: scale(108%);
+    border-bottom: 5px solid #E3E6F3;
+}
+
+#deslivrestarawih .pro-deslivrestarawih img
+{
+    width: 75%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#deslivrestarawih .pro-deslivrestarawih img:hover
+{
+    width: 100%;
+}
+
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih
+{
+    text-align: start;
+    padding: 10px 10px;
+    min-width: fit-content;
+    max-width: fit-content;
+    transition:0.5s;
+}
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih:hover
+{
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
+
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih span
+{
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #999999;
+}
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih h5
+{
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+    padding-top: 7px;
+    color: #121212;
+    font-size: 18px;
+}
+
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih button.disponible1
+{
+    font-size: 14px;
+    font-weight: 800;
+    color: #12c757;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #12c757;
+    border-radius: 2px;
+    vertical-align: middle;
+    padding: 10px 10px;
+    margin: 20px 0px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: 0.5s;
+    cursor:pointer;
+}
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih button.disponible1:hover
+{
+    font-size: 14px;
+    color: white;
+    background-color: #12c757;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 7px 12px #12c757;
+    text-shadow: 1px 2px 7px  #121212;
+}
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih button.indisponible1
+{
+    color: #999999;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #999999;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 10px 10px;
+    margin: 20px 0px;
+    box-shadow: none;
+    cursor:pointer;
+    transition: 0.5s;
+}
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih button.indisponible1:hover
+{
+    background-color: #9999999f;
+    border-radius: 10px;
+    box-shadow: 0px 7px 12px#999999b4;
+    font-size: 14px;
+    color: white;
+    border: 2px solid white;
+}
+
+
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih a.telechargeable1
+{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 2px 7px  #121212;
+    padding-top: 12px;
+    text-decoration: none;
+    background: linear-gradient(60deg, #1366e2, #1246f1);
+    border: 2px solid #1366e2;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    transform: scale(90%);
+    box-shadow: none;
+    cursor:pointer;
+    transition: 0.5s;
+}
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih a.telechargeable1:hover
+{
+    transform: scale(96%);
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    box-shadow: 0px 7px 12px #1366e2;
+}
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih a.nontelechargeable1
+{
+    font-size: 14px;
+    font-weight: 700;
+    color: #999999;
+    text-decoration: none;
+    background-color: white;
+    border-bottom: 5px solid #999999;
+    border-radius: 0px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    box-shadow: none;
+    transition: 0.5s;
+    cursor: not-allowed;
+}
+#deslivrestarawih .pro-deslivrestarawih .des-deslivrestarawih a.nontelechargeable1:hover
+{
+    color: white;
+    background-color: #9999999f;
+    box-shadow: 0px 7px 12px#999999b4;
+}
+
+#banner-3-livres
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+    background-attachment: fixed;
+    background-position: 10% 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("bibliotheque-2.jpg");
+    transition: 1s;
+}
+#banner-3-livres:hover
+{
+    background-position-x: right;
+    background-position: 10% 10%;
+    background-size: 108%;
+}
+
+#banner-3-livres .banner-box
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color: rgba(255, 255, 255, 0.89);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    transition: all 1s ease;
+    padding: 50px 20px;
+}
+#banner-3-livres .banner-box:hover
+{
+    background-position: 5px ;
+    transform: scale(90%);
+    cursor: pointer;
+}
+#banner-3-livres .banner-box2 
+{
+    background-color: rgba(255, 255, 255, 0.89);
+}
+
+#banner-3-livres .banner-box3 
+{
+    background-color: rgba(255, 255, 255, 0.89);
+}
+
+#banner-3-livres h2
+{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    background-color: rgba(255, 255, 255, 0.781);
+    padding: 10px 20px;
+}
+#banner-3-livres button
+{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 10px;
+    color: #32b25f;
+    background-color: rgba(255, 255, 255, 0.74);
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid #32b25f;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#banner-3-livres .banner-box:hover button
+{
+    background-color: #32b25f;
+    color: white;
+    transform: scale(90%);
+    box-shadow: 1px 1px 12px #999999cc;
+}
+
+#reseaux
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #121212;
+}
+
+#reseaux h4
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+#reseaux p
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+#reseaux p span
+{
+    color: #12c757;
+    font-size: 36px;
+}
+
+#reseaux .form
+{
+    display: flex;
+    width: 40%;
+}
+
+#reseaux input
+{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#reseaux button
+{
+    height: 3.125rem;
+    background-color: #ff0000;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    border: none;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#reseaux button:hover
+{
+    color: white;
+    transform: scale(108%);
+    box-shadow: 20px 0px 12px #090909;
+}
+
+
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.section-p1 .col a img
+{
+    max-width: 100px;
+    height: auto;
+    padding: 0 0;
+}
+
+footer .logo
+{
+    margin-bottom: 30px;
+}
+
+footer h4
+{
+    font-size: 20px;
+    color: #ff0000;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+footer p
+{
+    margin: 0 0 8px 0;
+}
+
+footer p strong
+{
+    color: #121212;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: #999;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.follow .icon i
+{
+    font-size: 28px;
+    margin: 3px;
+    color: #121212;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.follow .icon i:hover,
+footer a:hover
+{
+    color: #12c757;
+    transform: scaleX(108%);
+}
+i#common
+{
+    font-size: 16px;
+    color: #999999;
+    margin: 15px 0 20px 0;
+    transition: 0.5s;
+}
+i#common:hover
+{
+    transform: scaleX(120%);
+    color: #999999;
+    margin: 15px 0 20px 0;
+}
+.copyright i
+{
+    font-size: 28px;
+    margin: 3px;
+    color: #121212;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.copyright i:hover
+{
+    color: #1366e2;
+    transform: scaleX(108%);
+}
+footer .copyright
+{
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+footer .copyright:hover
+{
+    width: 100%;
+    text-align: center;
+    transform: scale(112%);
+}
+
+/* ------------------ START COMMANDE LIVRE ----------------------*/
+#ajouterlivreclient
+{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 40px 40px 80px 40px;
+    background-color: white;
+    box-shadow: 2px 3px 7px #121212;
+    transition: 0.5s ease;
+}
+
+
+
+#ajouterlivreclient form.form-ajouterlivreclient
+{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    min-width: fit-content;
+    padding: 20px 15px;
+    border: 1px solid #E3E6F3;
+    border-radius: 25px;
+    box-shadow: 0px 20px 34px #12121216;
+    margin: 0px 80px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+#ajouterlivreclient .form-groupeajouterlivreclient
+{
+    align-items: center;
+    margin: 10px 20px;
+    padding: 20px;
+    min-width: fit-content;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+#ajouterlivreclient .form-groupeajouterlivreclient label
+{
+    text-align: left;
+    min-width: auto;
+    font-size: 18px;
+    font-weight: 700;
+    width: auto;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    color: #999999;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+#ajouterlivreclient .form-groupeajouterlivreclient input.form-livreclient
+{
+    font-size: 16px;
+    min-width: auto;
+    max-width: auto;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#ajouterlivreclient .form-groupeajouterlivreclient input.form-livreclient:hover
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#ajouterlivreclient .form-groupeajouterlivrecient input.form-livreclient:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+
+#ajouterlivreclient .form-groupeajouterlivreclient input[type="file"]
+{
+    font-size: 16px;
+    width: 350px;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+
+#ajouterlivreclient .form-groupeajouterlivreclient input#datepublicationlivre
+{
+    font-size: 16px;
+    width: 350px;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#ajouterlivreclient .form-groupeajouterlivreclient input#datepublicationlivre:hover
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#ajouterlivreclient .form-groupeajouterlivreclient input#datepublicationlivre:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+#ajouterlivreclient .form-groupeajouterlivreclient textarea#resumelivre
+{
+    font-size: 16px;
+    width: 350px;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#ajouterlivreclient .form-groupeajouterlivreclient textarea#resumelivre:hover
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#ajouterlivreclient .form-groupeajouterlivreclient textarea#resumelivre:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+
+#ajouterlivreclient .form-groupeajouterlivreclient select#disponibilite,
+#ajouterlivreclient .form-groupeajouterlivreclient option#disponibilite
+{
+    font-size: 16px;
+    width: 350px;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#ajouterlivreclient .form-groupeajouterlivreclient select#disponibilite:hover,
+#ajouterlivreclient .form-groupeajouterlivreclient option#disponibilite:hover
+
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#ajouterlivreclient .form-groupeajouterlivreclient select#disponibilite:focus,
+#ajouterlivreclient .form-groupeajouterlivreclient option#disponibilite:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+
+#ajouterlivreclient .form-groupeajouterlivreclient select#disponibilitepdf,
+#ajouterlivreclient .form-groupeajouterlivreclient option#disponibilitepdf
+{
+    font-size: 16px;
+    width: 350px;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#ajouterlivreclient .form-groupeajouterlivreclient select#disponibilitepdf:hover,
+#ajouterlivreclient .form-groupeajouterlivreclient option#disponibilitepdf:hover
+
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#ajouterlivreclient .form-groupeajouterlivreclient select#disponibilitepdf:focus,
+#ajouterlivreclient .form-groupeajouterlivreclient option#disponibilitepdf:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+#ajouterlivreclient button.submit-livre
+{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #12c757;
+    padding-top: 12px;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #12c757;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: 0.5s;
+    cursor:pointer;
+}
+#ajouterlivreclient button.submit-livre:hover
+{
+    color: white;
+    transform: scale(120%);
+    font-weight: 900;
+    letter-spacing: 5px;
+    background-color: #12c757;
+    border-radius: 12px;
+    box-shadow: 0px 7px 12px #12c757;
+    text-shadow: 1px 2px 7px  #121212;
+}
+
+
+#confirmationcommandelivre .confirmation-commande
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 40px;
+}
+
+#confirmationcommandelivre .confirmation-commande h3
+{
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+#confirmationcommandelivre .confirmation-commande a
+{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    width: 300px;
+    align-self: center;
+    text-decoration: none;
+    color: #12c757;
+    padding-top: 12px;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #12c757;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: 0.5s;
+    cursor:pointer;
+}
+#confirmationcommandelivre .confirmation-commande a:hover
+{
+    color: white;
+    transform: scale(120%);
+    font-weight: 900;
+    letter-spacing: 5px;
+    background-color: #12c757;
+    border-radius: 12px;
+    box-shadow: 0px 7px 12px #12c757;
+    text-shadow: 1px 2px 7px  #121212;
+}
+
+/* ------------ Start Media Query ---------------*/
+
+@media (max-width:1000px) 
+{
+    .section-p1 
+    {
+        padding: 40px 40px;
+    }
+    #navbar
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #121212;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active
+    {
+        right: 0px;
+    }
+    #navbar li 
+    {
+        margin-bottom: 25px;
+    }
+    #mobile
+    {
+    display: flex;
+    align-items: center;
+    }
+
+    #mobile i 
+    {
+        color: #ffffff;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close
+    {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+    }
+    #pagedulivre h1
+    {
+        font-size: 28px;
+        line-height: 28px;
+        padding: 15px 15px;
+    }
+    #pagedulivre p.sub3
+    {
+        font-size: 16px;
+        padding: 15px 15px;
+    }
+    #livrestarawih .pro-container 
+    {
+        justify-content: center;
+    }
+    #livrestarawih .pro 
+    {
+        margin: 15px;
+    }
+    #sm-banner .banner-box 
+    {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #banner-3 
+    {
+        padding: 0px 30px;
+    }
+    #banner-3 .banner-box 
+    {
+        min-width: 20%;
+    }
+    #reseaux .form 
+    {
+        width: 70%;
+    }
+}
+@media (max-width:678px)
+{
+    #detailslivretarawih
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    #detailslivretarawih .linksite-breadlivre
+    {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+}
+@media (max-width:477px)
+{
+    .section-p1
+    {
+        padding: 20px;
+    }
+    #header 
+    {
+        padding: 0px 20px;
+    }
+    #livres h2 {
+        font-size: 48px;
+        background: rgba(255, 255, 255, 0.752);
+        border-radius: 3px;
+        margin: 10px;
+        padding: 0px;
+    }
+    #livrestarawih .pro 
+    {
+        width: 100%;
+    }
+    #sm-banner .banner-box 
+    {
+        height: 50vh;
+    }
+    #sm-banner .banner-box h2 
+    {
+        background-color: transparent;
+        line-height: 30px;
+        padding: 5px 2px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+    #sm-banner span 
+    {
+        line-height: 30px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    #banner-3
+    {
+        justify-content: space-around;
+    }
+    #banner-3 .banner-box
+    {
+        width: 100%;
+    }
+
+    #reseaux {
+        padding: 60px 20px;
+        background-position: 100%;
+    }
+    #reseaux .form {
+        width: 100%;
+    }
+
+    /*single produit*/
+    #detailslivretarawih
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #detailslivretarawih .single-pro-image 
+    {
+        width: 100%;
+        margin-right: 0px;
+    }
+    #detailslivretarawih .single-pro-details 
+    {
+        width: 100%;
+        padding-top: 20px;
+    }
+}

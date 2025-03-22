@@ -1,0 +1,1240 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Old+Standard+TT&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1
+{
+    font-size: 48px;
+    line-height: 60px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+
+h2
+{
+    font-size: 26px;
+    line-height: 48px;
+    color: #121212;
+}
+
+h4
+{
+    font-size: 24px;
+    color: #12c757;
+}
+
+h6
+{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p
+{
+    font-size: 19px;
+    color: #999999;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1
+{
+    padding: 40px 80px;
+}
+
+.section-m1
+{
+    margin: 40px 0;
+}
+strong
+{
+    font-size: inherit;
+    font-weight: 800;
+    font-family: 'Raleway';
+}
+h1 strong
+{
+    font-size: inherit;
+    font-weight: 800;
+    font-family: 'Raleway';
+}
+h2 strong
+{
+    font-size: inherit;
+    font-weight: 800;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body
+{
+    width: 100%;
+}
+
+/* ------------ Header Start ---------------*/
+#header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px 0px 80px;
+    background: linear-gradient(60deg, #1ece76, #12c757, #12863a);
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.171);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#header a img
+{
+    max-width: 80px;
+    height: auto;
+    padding: 0 0;
+}
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li
+{
+    list-style: none;
+    padding: 10px 10px;
+    margin: 10px 12px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #1212124d;
+    border-top: 2px solid rgba(255, 255, 255, 0.918);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.918);
+    border-left: 0px solid;
+    border-right: 0px solid;
+    transition: 0.5s;
+}
+#navbar li:hover
+{
+    text-shadow: none;
+    letter-spacing: 0.17em;
+    transform: scale(108%);
+}
+#navbar li.active
+{
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+#navbar li::before
+{
+    content:"";
+    position: absolute;
+    inset: 2px;
+}
+#navbar li a
+{
+    position: relative;
+    font-size: 16px;
+    z-index: 1;
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #1212124d;
+    
+}
+
+#navbar li i
+{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+#navbar li i::before
+{
+    content: "";
+    position: absolute;
+    top: -5.5px;
+    border: 2px solid white;
+    width: 15px;
+    left: 10%;
+    height: 5px;
+    background: linear-gradient(60deg, #1ece76, #12c757, #12863a);
+    transition: 0.5s;
+}
+
+#navbar li:hover i::before
+{
+    width: 10px;
+    left: 80%;
+}
+
+#navbar li i::after
+{
+    content: "";
+    position: absolute;
+    bottom: -5.5px;
+    border: 2px solid white;
+    width: 15px;
+    left: 80%;
+    height: 5px;
+    background: linear-gradient(60deg, #1ece76, #12c757, #12863a);
+    transition: 0.5s;
+}
+
+#navbar li:hover i::after
+{
+    width: 10px;
+    left: 10%;
+}
+
+
+#mobile
+{
+    display: none;
+    align-items: center;
+}
+
+#close
+{
+    display: none;
+}
+
+
+
+/*------------- PAGE ARTICLE UNIQUE DETAILS ------------------*/
+
+#detailsarticletarawih .single-article-tarawih
+{
+    padding: 40px 40px 10px 40px;
+    width: 90%;
+    min-height: fit-content;
+    background-color: white;
+}
+#detailsarticletarawih
+{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    border-bottom: none;
+    width: 100%;
+    height: fit-content;
+    transition: 1s;
+}
+#detailsarticletarawih .single-article-tarawih p
+{
+    font-size: 20px;
+    color: #121212;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#detailsarticletarawih .single-article-tarawih .sub-article-tarawih
+{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 5px solid #999999;
+    transition: 0.5s;
+}
+#detailsarticletarawih .single-article-tarawih .sub-article-tarawih:hover
+{
+    border-bottom: 10px solid #999999;
+}
+
+#detailsarticletarawih .sub-article-tarawih h1
+{
+    margin-left: 10px;
+    padding: 12px 7px;
+    color: #121212;
+    font-size: 36px;
+    transition: 0.5s;
+    text-align: center;
+}
+#detailsarticletarawih .sub-article-tarawih:hover h1
+{
+    transform: scale(104%);
+    transform: translateY(12px);
+}
+#detailsarticletarawih .sub-article-tarawih h3
+{
+    padding: 12px 10px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 16px;
+    font-family: "Raleway";
+    font-weight: 900;
+    color: white;
+    background-color: #e21818;
+    box-shadow: 10px 10px 0px #c6c9d6;
+    transition: 0.5s;
+}
+#detailsarticletarawih .sub-article-tarawih:hover h3
+{
+    transform: scale(104%);
+    transform: translateX(-12px);
+    background-color: #c6c9d6;
+    box-shadow: 15px 15px 0px #e21818;
+}
+
+#detailsarticletarawih .link-article-tarawih
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 0px 10px 0px;
+    width: 90%;
+    align-content: center;
+    min-height: 50px;
+    background-color: white;
+}
+
+#detailsarticletarawih .link-article-tarawih a
+{
+    color: #121212;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: 0.5s;
+}
+#detailsarticletarawih .link-article-tarawih a:hover
+{
+    text-decoration: underline;
+    color: #1366e2;
+}
+#detailsarticletarawih .subshare-article-tarawih
+{
+    display: inline-flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    width: 90%;
+    min-height: fit-content;
+    background-color: whitesmoke;
+}
+#detailsarticletarawih .subshare-article-tarawih a
+{
+    border: 1px solid #bcbcbc ;
+    border-radius: 30px ;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    font-family: 'raleway';
+    font-size: 14px;
+    background-color: white;
+    color: #121212;
+    text-decoration: none;
+    transition : 0.5s;
+}
+#detailsarticletarawih .subshare-article-tarawih a:hover
+{
+    color: white;
+    background-color: #1366e2;
+    border: 1px solid whitesmoke ;
+    border-radius: 10px ;
+}
+#detailsarticletarawih .subshare-article-tarawih i
+{
+    margin-right: 5px;
+}
+#detailsarticletarawih .img-article-tarawih
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 10px 0px;
+    width: 90%;
+    min-height: fit-content;
+    background-color: white;
+}
+#detailsarticletarawih .img-article-tarawih img
+{
+    width: 50%;
+    margin-top: 10px;
+}
+#detailsarticletarawih .img-article-tarawih p
+{
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0px 10px 40px;
+}
+#detailsarticletarawih .content-article
+{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 10px 0px;
+    min-height: fit-content;
+    flex-direction: row;
+    width: 90%;
+
+}
+#detailsarticletarawih .content-article-tarawih
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0px 10px 0px;
+    width: 90%;
+    min-height: fit-content;
+    background-color: white;
+}
+#detailsarticletarawih .content-article-tarawih .subauteur-article-tarawih
+{
+    text-align: left;
+    margin: 10px 0px 10px 40px;
+
+}
+#detailsarticletarawih .content-article-tarawih .subauteur-article-tarawih p
+{
+    text-align: left;
+    font-size: 16px;
+    color: #121212;
+}
+#detailsarticletarawih .content-article-tarawih .subauteur-article-tarawih p span span a
+{
+    text-align: left;
+    font-weight: 700;
+    text-decoration: none;
+    color: #12c757;
+    transition: 0.5s;
+}
+#detailsarticletarawih .content-article-tarawih .subauteur-article-tarawih p span span a:hover
+{
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+#detailsarticletarawih .content-article-tarawih .subauteur-article-tarawih p.date-article-tarawih
+{
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: #999999;
+}
+#detailsarticletarawih .content-article-tarawih a.urlauteur
+{
+    text-align: left;
+    margin-left: 5px;
+    padding : 5px;
+    background: white;
+    font-size: 14px;
+    text-decoration: none;
+    color: #e21818;
+    transition: 0.3s;
+}
+#detailsarticletarawih .content-article-tarawih a.urlauteur:hover
+{
+    background: #e21818;
+    text-decoration: underline;
+    color: white;
+}
+#detailsarticletarawih .content-article-tarawih .content1-article-tarawih
+{
+    text-align: left;
+    margin: 10px 40px 10px 40px;
+}
+#detailsarticletarawih .content-article-tarawih .content1-article-tarawih h2.soustitre1-article-tarawih
+{
+    text-align: left;
+    font-size: 26px;
+    line-height: 26px;
+}
+#detailsarticletarawih .content-article-tarawih .content1-article-tarawih p.paragraphe1-article-tarawih
+{
+    font-size: 20px;
+    color: #121212;
+    text-align: justify;
+    line-height: 1.5;
+}
+#detailsarticletarawih .content-article-tarawih .content1-article-tarawih p.paragraphe1-article-tarawih h2
+{
+    text-align: left;
+    font-size: 26px;
+    line-height: 26px;
+}
+#detailsarticletarawih .content-article-tarawih .content1-article-tarawih .guide
+{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background-color: #3891b934;
+    padding: 12px;
+    margin: 20px 10px;
+}
+#detailsarticletarawih .content-article-tarawih .content1-article-tarawih .intervenant
+{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border-radius: 12px;
+    background-color: #12c7574f;
+    padding: 12px;
+    margin: 10px;
+}
+#detailsarticletarawih .img-secondaire
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 10px 0px;
+    width: 90%;
+    min-height: fit-content;
+    background-color: white;
+}
+#detailsarticletarawih .img-secondaire img
+{
+    width: 50%;
+    margin-top: 10px;
+}
+#detailsarticletarawih blockquote p
+{
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #121212;
+    text-align: justify;
+    line-height: 1.5;
+}
+#detailsarticletarawih blockquote
+{
+    margin: 0;
+}
+
+#detailsarticletarawih blockquote a
+{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition:0.3s;
+}
+#detailsarticletarawih blockquote sup
+{
+    padding: 5px;
+    background: #12c757;
+    border-radius: 2px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    text-align: justify;
+    border-bottom: none;
+    line-height: 1;
+    transition:0.3s;
+}
+#detailsarticletarawih blockquote sup:hover
+{
+    background: white;
+    text-decoration: underline;
+    color: #12c757;
+}
+#detailsarticletarawih p a.ref1
+{
+    font-size: 20px;
+    text-decoration: none;
+    color: #1366e2;
+    transition: 0.3s;
+}
+#detailsarticletarawih p a.ref1:hover
+{
+    text-decoration: underline;
+}
+#detailsarticletarawih ul
+{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #121212;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#detailsarticletarawih ol
+{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+#detailsarticletarawih li
+{
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    font-weight: 600;
+    width: fit-content;
+    background: white;
+    font-size: 20px;
+    color: #ff0000;
+    text-align: justify;
+    box-shadow: none;
+    line-height: 1.5;
+    transition: 0.5s;
+}
+#detailsarticletarawih li:hover
+{
+    color: white;
+    background: #ff0000;
+    border-radius: 5px;
+    box-shadow: 2px 3px 7px #99999946
+}
+#detailsarticletarawih ol.references
+{
+    font-size: 12px;
+    color: #121212;
+}
+#detailsarticletarawih li.citenote
+{
+    padding: 2px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    font-weight: 500;
+    width: fit-content;
+    background: white;
+    font-size: 12px;
+    color: #121212;
+    text-align: justify;
+    box-shadow: none;
+    line-height: 1.5;
+    transition: 0.5s;
+}
+#detailsarticletarawih li.citenote:hover
+{
+    background: #5398ff77;
+}
+
+#detailsarticletarawih span.reference-text
+{
+    font-size: 12px;
+    color: #121212;
+    background: transparent;
+    transition:0.5S
+}
+
+#detailsarticletarawih li.citenote#citenote1:target,
+#detailsarticletarawih li.citenote#citenote2:target,
+#detailsarticletarawih li.citenote#citenote3:target,
+#detailsarticletarawih li.citenote#citenote4:target,
+#detailsarticletarawih li.citenote#citenote5:target,
+#detailsarticletarawih li.citenote#citenote6:target,
+#detailsarticletarawih li.citenote#citenote7:target,
+#detailsarticletarawih li.citenote#citenote8:target,
+#detailsarticletarawih li.citenote#citenote9:target,
+#detailsarticletarawih li.citenote#citenote10:target,
+#detailsarticletarawih li.citenote#citenote11:target,
+#detailsarticletarawih li.citenote#citenote12:target,
+#detailsarticletarawih li.citenote#citenote13:target,
+#detailsarticletarawih li.citenote#citenote14:target,
+#detailsarticletarawih li.citenote#citenote15:target,
+#detailsarticletarawih li.citenote#citenote16:target,
+#detailsarticletarawih li.citenote#citenote17:target,
+#detailsarticletarawih li.citenote#citenote18:target,
+#detailsarticletarawih li.citenote#citenote19:target,
+#detailsarticletarawih li.citenote#citenote20:target,
+#detailsarticletarawih li.citenote#citenote21:target
+
+{
+    background: #5398ff77;
+}
+#detailsarticletarawih .quelquesarticles-tarawih
+{
+    text-align: center;
+    background-color: white;
+}
+#detailsarticletarawih .pro-containerquelquesarticles
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    max-height: fit-content;
+    min-height: fit-content;
+}
+
+#detailsarticletarawih .proquelquesarticles
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 100%;
+    max-width: fit-content;
+    min-width: 250px;
+    max-height: fit-content;
+    padding: 10px 20px;
+    border-bottom: 5px solid #E3E6F3;
+    box-shadow: 20px 20px 34px #12121216;
+    margin: 15px 20px;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+#detailsarticletarawih .proquelquesarticles:hover
+{
+    box-shadow: 0px 30px 30px -20px #1246f173;
+    transform: translateX(3px);
+    transform: translateY(2px);
+    transform: scale(108%);
+    border-bottom: 10px solid #12c757;
+}
+
+#detailsarticletarawih .proquelquesarticles img
+{
+    width: 200px;
+    height: fit-content;
+    padding: 5px;
+}
+
+#detailsarticletarawih .quelquesarticles-tarawih .proquelquesarticles h5
+{
+    width: 80%;
+    padding-top: 7px;
+    color: #121212;
+    font-size: 18px;
+    text-align: left;
+}
+#detailsarticletarawih .quelquesarticles-tarawih .proquelquesarticles span.datemiseajourarticle
+{
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #999999;
+    text-align: left;
+
+}
+#detailsarticletarawih .quelquesarticles-tarawih .proquelquesarticles span.chapoarticle
+{
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #999999;
+    text-align: left;
+
+}
+
+#detailsarticletarawih .quelquesarticles-tarawih .proquelquesarticles a.lirearticle
+{
+    text-align: left;
+    width: 20%;
+    font-size: 16px;
+    text-shadow: 1px 2px 3px #12121281;
+    padding: 12px;
+    background: linear-gradient(60deg, #e21818, #ff0000);
+    cursor: pointer;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 0px;
+    transition: 0.5s;
+}
+#detailsarticletarawih .quelquesarticles-tarawih .proquelquesarticles a.lirearticle:hover
+{
+    transform: scale(108%);
+    transform: translateX(7px);
+    transform: translateY(12px);
+    text-shadow: 3px 7px 7px #12121281;
+    background: linear-gradient(60deg, #999999, #c6c9d6);
+}
+
+
+
+
+
+#banner-3-livres
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+    background-attachment: fixed;
+    background-position: 10% 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("bibliotheque-2.jpg");
+    transition: 1s;
+}
+#banner-3-livres:hover
+{
+    background-position-x: right;
+    background-position: 10% 10%;
+    background-size: 108%;
+}
+
+#banner-3-livres .banner-box
+{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color: rgba(255, 255, 255, 0.89);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    transition: all 1s ease;
+    padding: 50px 20px;
+}
+#banner-3-livres .banner-box:hover
+{
+    background-position: 5px ;
+    transform: scale(90%);
+    cursor: pointer;
+}
+#banner-3-livres .banner-box2 
+{
+    background-color: rgba(255, 255, 255, 0.89);
+}
+
+#banner-3-livres .banner-box3 
+{
+    background-color: rgba(255, 255, 255, 0.89);
+}
+
+#banner-3-livres h2
+{
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    background-color: rgba(255, 255, 255, 0.781);
+    padding: 10px 20px;
+}
+#banner-3-livres button
+{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 10px;
+    color: #32b25f;
+    background-color: rgba(255, 255, 255, 0.74);
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid #32b25f;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#banner-3-livres .banner-box:hover button
+{
+    background-color: #32b25f;
+    color: white;
+    transform: scale(90%);
+    box-shadow: 1px 1px 12px #999999cc;
+}
+
+#reseaux
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #121212;
+}
+
+#reseaux h4
+{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+#reseaux p
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+#reseaux p span
+{
+    color: #12c757;
+    font-size: 36px;
+}
+
+#reseaux .form
+{
+    display: flex;
+    width: 40%;
+}
+
+#reseaux input
+{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#reseaux button
+{
+    height: 3.125rem;
+    background-color: #ff0000;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    border: none;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#reseaux button:hover
+{
+    color: white;
+    transform: scale(108%);
+    box-shadow: 20px 0px 12px #090909;
+}
+
+
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.section-p1 .col a img
+{
+    max-width: 100px;
+    height: auto;
+    padding: 0 0;
+}
+
+footer .logo
+{
+    margin-bottom: 30px;
+}
+
+footer h4
+{
+    font-size: 20px;
+    color: #ff0000;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+footer p
+{
+    margin: 0 0 8px 0;
+}
+
+footer p strong
+{
+    color: #121212;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: #999;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.follow .icon i
+{
+    font-size: 28px;
+    margin: 3px;
+    color: #121212;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.follow .icon i:hover,
+footer a:hover
+{
+    color: #12c757;
+    transform: scaleX(108%);
+}
+i#common
+{
+    font-size: 16px;
+    color: #999999;
+    margin: 15px 0 20px 0;
+    transition: 0.5s;
+}
+i#common:hover
+{
+    transform: scaleX(120%);
+    color: #999999;
+    margin: 15px 0 20px 0;
+}
+.copyright i
+{
+    font-size: 28px;
+    margin: 3px;
+    color: #121212;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.copyright i:hover
+{
+    color: #1366e2;
+    transform: scaleX(108%);
+}
+footer .copyright
+{
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+footer .copyright:hover
+{
+    width: 100%;
+    text-align: center;
+    transform: scale(112%);
+}
+
+
+
+/* ------------ Start Media Query ---------------*/
+
+@media (max-width:1000px) 
+{
+    .section-p1 
+    {
+        padding: 40px 40px;
+    }
+    #navbar
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #121212;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+    #navbar.active
+    {
+        right: 0px;
+    }
+    #navbar li 
+    {
+        margin-bottom: 25px;
+    }
+    #mobile
+    {
+    display: flex;
+    align-items: center;
+    }
+
+    #mobile i 
+    {
+        color: #ffffff;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #close
+    {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+    }
+
+    #detailsarticletarawih .single-article-tarawih
+    {
+        padding: 40px 10px 10px 10px;
+        width: 90%;
+    }
+    #detailsarticletarawih
+    {
+        width: 100%;
+    }
+    #detailsarticletarawih .single-article-tarawih p
+    {
+        font-size: 16px;
+    }
+
+    #detailsarticletarawih .single-article-tarawih .sub-article-tarawih
+    {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 5px solid #999999;
+        transition: 0.5s;
+    }
+    #detailsarticletarawih .single-article-tarawih .sub-article-tarawih:hover
+    {
+        border-bottom: 10px solid #999999;
+    }
+
+    #detailsarticletarawih .sub-article-tarawih h1
+    {
+        margin-left: 5px;
+        font-size: 28px;
+        line-height: 28px;
+    }
+    #detailsarticletarawih .sub-article-tarawih h3
+    {
+        font-size: 14px;
+    }
+    #detailsarticletarawih .link-article-tarawih
+    {
+        width: 90%;
+    }
+    #detailsarticletarawih .link-article-tarawih a:hover
+    {
+        font-size: 13px;
+    }
+    #detailsarticletarawih .subshare-article-tarawih
+    {
+        width: 90%;
+    }
+    #sm-banner .banner-box 
+    {
+        min-width: 100%;
+        height: 30vh;
+    }
+    #banner-3 
+    {
+        padding: 0px 30px;
+    }
+    #banner-3 .banner-box 
+    {
+        min-width: 20%;
+    }
+    #reseaux .form {
+        width: 70%;
+    }
+}
+
+@media (max-width:900px)
+{
+    #detailsarticletarawih .content-article
+    {
+        padding: 0px 0px 20px 0px;
+        flex-direction: column;
+        width: 90%;
+    }
+    #detailsarticletarawih .content-article-tarawih
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 0px 10px 0px;
+        width: 100%;
+        min-height: fit-content;
+        background-color: white;
+    }
+    #detailsarticletarawih .content-article-tarawih .content1-article-tarawih h2.soustitre1-article-tarawih
+    {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    #detailsarticletarawih .content-article-tarawih .content1-article-tarawih p.paragraphe1-article-tarawih
+    {
+        font-size: 14px;
+    }
+}
+@media (max-width:768px)
+{
+    #detailsarticletarawih .img-article-tarawih img
+    {
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    #detailsarticletarawih .img-article-tarawih p
+    {
+        margin: 10px 0px 10px 0px;
+    }
+    #detailsarticletarawih .img-secondaire img
+    {
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+@media (max-width:477px)
+{
+    .section-p1
+    {
+        padding: 20px;
+    }
+    #header 
+    {
+        padding: 0px 20px;
+    }
+    #sm-banner .banner-box 
+    {
+        height: 50vh;
+    }
+    #sm-banner .banner-box h2 
+    {
+        background-color: transparent;
+        line-height: 30px;
+        padding: 5px 2px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+    #sm-banner span 
+    {
+        line-height: 30px;
+        padding: 10px 10px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    #banner-3
+    {
+        justify-content: space-around;
+    }
+    #banner-3 .banner-box
+    {
+        width: 100%;
+    }
+
+    #reseaux {
+        padding: 60px 20px;
+        background-position: 100%;
+    }
+    #reseaux .form {
+        width: 100%;
+    }
+
+}

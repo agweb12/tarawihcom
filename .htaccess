@@ -1,0 +1,12 @@
+#------------- le serveur doit suivre les liens symboliques
+Options +FollowSymlinks
+
+#------------- demarrage du moteur de réécriture d'url
+RewriteEngine on
+
+#------------- règles de réécriture d'url
+RewriteRule ^livraison$    livraison.php
+RewriteRule ^accueil$    index.php
+RewriteRule ^faq-priere-tarawih$     faq-tarawih.php
+RewriteRule ^livres-priere-tarawih$     livres-tarawih.php
+RewriteRule ^articles-priere-tarawih$     articles-tarawih.php

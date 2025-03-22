@@ -1,0 +1,6 @@
+# Robot Exclusion file -- robots.txt
+
+user-agent: *
+Disallow: /admin/
+
+Sitemap: https://www.tarawih.com/sitemap.xml

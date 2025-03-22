@@ -1,0 +1,14 @@
+{
+    "name": "metma/la-priere-de-tarawih",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Metma\\LaPriereDeTarawih\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.7.1",
+        "psr/log": "^1.1"
+    }
+}

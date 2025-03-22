@@ -1,0 +1,15 @@
+#------------- le serveur doit suivre les liens symboliques
+Options +FollowSymlinks
+
+#------------- demarrage du moteur de réécriture d'url
+RewriteEngine on
+
+#------------- règles de réécriture d'url
+RewriteRule ^details-livre/([a-za-zA-Z0-9\-]*)-([0-9]+)$     details-livre.php?slug=$1&id=$2
+RewriteRule ^details-livre/commande-livre   commande-livre.php
+RewriteRule ^details-livre/confirmation-commande-livre   confirmation-commande-livre.php
+RewriteRule ^details-livre/preparation-envoi   preparation-envoi.php
+RewriteRule ^details-livre/confirmation-mail   confirmation-mail.php
+
+
+

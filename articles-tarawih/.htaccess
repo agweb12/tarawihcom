@@ -1,0 +1,10 @@
+#------------- le serveur doit suivre les liens symboliques
+Options +FollowSymlinks
+
+#------------- demarrage du moteur de réécriture d'url
+RewriteEngine on
+
+#------------- règles de réécriture d'url
+RewriteRule ^details-articles/([a-za-zA-Z0-9\-]*)-([0-9]+)$     details-articles.php?slug=$1&id=$2
+
+

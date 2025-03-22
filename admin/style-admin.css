@@ -1,0 +1,875 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Old+Standard+TT&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1
+{
+    font-size: 48px;
+    line-height: 60px;
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 800;
+}
+
+h2
+{
+    font-size: 36px;
+    line-height: 48px;
+    color: #121212;
+}
+
+h4
+{
+    font-size: 24px;
+    color: #2fb383;
+}
+
+h6
+{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p
+{
+    font-size: 16px;
+    color: #999999;
+    margin: 15px 0 20px 0;
+}
+
+.aide-enligne
+{
+    font-size: 14px;
+    color: #ff0000;
+    margin: 15px 0 20px 0;
+}
+/*VOIR LIVRE ADMINISTRATEUR*/
+#voiradminlivre
+{
+    text-align: center;
+}
+
+#voiradmin.titre-container
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #090909;
+    border-bottom: none;
+    width: 100%;
+    height: 30vh;
+    transition: 1s;
+}
+#voiradmin h1
+{
+    font-size: 48px;
+    color: #121212;
+    background: rgba(255, 255, 255, 0.881) ;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+#voiradmin h1:hover
+{
+    transform: scale(120%);
+}
+#voiradmin a
+{
+    color: white;
+    text-decoration:none;
+    padding: 7px 15px;
+    text-shadow: 1px 3px 7px #121212;
+    font-size: 22px;
+    font-family: 'Raleway';
+    border-radius: 3px;
+    background: linear-gradient(60deg, #12863a, #12c757);
+    margin: 10px 20px;
+    transition: 1s ease;
+}
+#voiradmin a:hover
+{
+    font-size: 24px;
+    text-shadow: 1px 3px 7px #121212d1;
+    transform: translateX(5px);
+    transform: translateY(5px);
+}
+
+#voiradminlivre .pro-container.admin
+{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 40px 40px 40px 40px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("img-tarawih/bibliotheque-1.jpg");
+    transition: 0.5s ease;
+}
+#voiradminlivre .pro-container.admin:hover
+{
+    background-size: 108%;
+}
+
+#voiradminlivre .pro.admin
+{
+    width: 100%;
+    min-width: 30%;
+    max-width: 50%;
+    min-height: fit-content;
+    padding: 20px 15px;
+    border: 1px solid #E3E6F3;
+    border-radius: 25px;
+    box-shadow: 20px 20px 34px #12121216;
+    margin: 15px 20px;
+    transition: 0.3s ease;
+    position: relative;
+    background-color: white;
+}
+
+#voiradminlivre .pro.admin:hover
+{
+    box-shadow: 3px 3px 12px #12c757a3;
+    transform: translateX(3px);
+    transform: translateY(2px);
+    transform: scale(108%);
+    border: none;
+}
+
+#voiradminlivre .pro.admin img
+{
+    width: 90%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#voiradminlivre .pro.admin img:hover
+{
+    width: 100%;
+}
+
+#voiradminlivre .pro.admin .des.admin
+{
+    text-align: start;
+    padding: 10px 0;
+    min-width: 300px;
+    max-width: 600px;
+
+}
+
+
+#voiradminlivre .pro.admin .des.admin span
+{
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #999999;
+    text-transform: uppercase;
+}
+#voiradminlivre .pro.admin .des h5
+{
+    padding-top: 7px;
+    margin-bottom: 10px;
+    color: #121212;
+    font-size: 24px;
+}
+#voiradminlivre .pro .des.admin i
+{
+    font-size: 16px;
+    color: #ecd11d;
+    padding-top: 7px;
+}
+#voiradminlivre .pro.admin .des.admin button.disponible.admin
+{
+    font-size: 16px;
+    font-weight: 700;
+    color: #12c757;
+    padding-top: 12px;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #12c757;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: 0.5s;
+    cursor:pointer;
+}
+#voiradminlivre .pro.admin .des.admin button.disponible.admin:hover
+{
+    color: white;
+    letter-spacing: 1px;
+    background-color: #12c757;
+    border-radius: 12px;
+    box-shadow: 0px 7px 12px #12c757;
+    text-shadow: 1px 2px 7px  #121212;
+}
+#voiradminlivre .pro.admin .des.admin button.indisponible.admin
+{
+    font-size: 16px;
+    color: #999999;
+    padding-top: 12px;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #999999;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    box-shadow: none;
+    transition: 0.5s;
+    cursor: not-allowed;
+}
+#voiradminlivre .pro.admin .des.admin button.indisponible.admin:hover
+{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: #999999;
+    border-radius: 15px;
+    box-shadow: 0px 7px 12px#999999b4;
+}
+
+#voiradminlivre .pro.admin .des.admin a.telechargeable.admin
+{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 2px 7px  #121212;
+    padding-top: 12px;
+    text-decoration: none;
+    background: linear-gradient(60deg, #1366e2, #1246f1);
+    border: 2px solid #1366e2;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    box-shadow: none;
+    cursor:pointer;
+    transition: 0.5s;
+}
+#voiradminlivre .pro.admin .des.admin a.telechargeable.admin:hover
+{
+    transform: scale(100%);
+    color: white;
+    letter-spacing: 0px;
+    border-radius: 12px;
+    box-shadow: 0px 7px 12px #1366e2;
+}
+
+#voiradminlivre .pro.admin .des.admin a.nontelechargeable.admin
+{
+    font-size: 16px;
+    color: #999999;
+    padding-top: 12px;
+    text-decoration: none;
+    background-color: white;
+    border-bottom: 5px solid #999999;
+    border-radius: 0px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 2px;
+    margin: 20px 0px;
+    box-shadow: none;
+    transition: 0.5s ease;
+    cursor: not-allowed;
+}
+#voiradminlivre .pro.admin .des.admin a.nontelechargeable.admin:hover
+{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-color: #999999;
+    box-shadow: 0px 7px 12px#999999b4;
+}
+
+
+/*AJOUTER LIVRE ADMINISTRATEUR*/
+#ajouterlivreadmin
+{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 40px 40px 80px 40px;
+    background-color: white;
+    box-shadow: 2px 3px 7px #121212;
+    transition: 0.5s ease;
+}
+
+#ajouterlivreadmin form.form-ajouterlivre
+{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    min-width: fit-content;
+    padding: 20px 15px;
+    border: 1px solid #E3E6F3;
+    border-radius: 25px;
+    box-shadow: 0px 20px 34px #12121216;
+    margin: 0px 80px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+#ajouterlivreadmin .form-groupeajouterlivre
+{
+    width: 90%;
+    align-items: center;
+    margin: 10px 20px;
+    padding: 20px;
+    min-width: fit-content;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+#ajouterlivreadmin .form-groupeajouterlivre label
+{
+    text-align: left;
+    min-width: auto;
+    font-size: 18px;
+    font-weight: 700;
+    width: 350px;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    color: #999999;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+#ajouterlivreadmin .form-groupeajouterlivre input.form-livre
+{
+    font-size: 16px;
+    width: 350px;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#ajouterlivreadmin .form-groupeajouterlivre input.form-livre:hover
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#ajouterlivreadmin .form-groupeajouterlivre input.form-livre:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+
+#ajouterlivreadmin .form-groupeajouterlivre input[type="file"]
+{
+    font-size: 16px;
+    width: 350px;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+
+#ajouterlivreadmin .form-groupeajouterlivre input#datepublicationlivre
+{
+    font-size: 16px;
+    width: 350px;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#ajouterlivreadmin .form-groupeajouterlivre input#datepublicationlivre:hover
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#ajouterlivreadmin .form-groupeajouterlivre input#datepublicationlivre:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+#ajouterlivreadmin .form-groupeajouterlivre textarea#resumelivre
+{
+    font-size: 16px;
+    width: 350px;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#ajouterlivreadmin .form-groupeajouterlivre textarea#resumelivre:hover
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#ajouterlivreadmin .form-groupeajouterlivre textarea#resumelivre:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+
+#ajouterlivreadmin .form-groupeajouterlivre select#disponibilite,
+#ajouterlivreadmin .form-groupeajouterlivre option#disponibilite
+{
+    font-size: 16px;
+    width: 350px;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#ajouterlivreadmin .form-groupeajouterlivre select#disponibilite:hover,
+#ajouterlivreadmin .form-groupeajouterlivre option#disponibilite:hover
+
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#ajouterlivreadmin .form-groupeajouterlivre select#disponibilite:focus,
+#ajouterlivreadmin .form-groupeajouterlivre option#disponibilite:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+
+#ajouterlivreadmin .form-groupeajouterlivre select#disponibilitepdf,
+#ajouterlivreadmin .form-groupeajouterlivre option#disponibilitepdf
+{
+    font-size: 16px;
+    width: 350px;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#ajouterlivreadmin .form-groupeajouterlivre select#disponibilitepdf:hover,
+#ajouterlivreadmin .form-groupeajouterlivre option#disponibilitepdf:hover
+
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#ajouterlivreadmin .form-groupeajouterlivre select#disponibilitepdf:focus,
+#ajouterlivreadmin .form-groupeajouterlivre option#disponibilitepdf:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+#ajouterlivreadmin button.submit-livre
+{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #12c757;
+    padding-top: 12px;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #12c757;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: 0.5s;
+    cursor:pointer;
+}
+#ajouterlivreadmin button.submit-livre:hover
+{
+    color: white;
+    transform: scale(120%);
+    font-weight: 900;
+    letter-spacing: 5px;
+    background-color: #12c757;
+    border-radius: 12px;
+    box-shadow: 0px 7px 12px #12c757;
+    text-shadow: 1px 2px 7px  #121212;
+}
+
+
+
+
+
+
+/*MODIFIER LIVRE ADMIN*/
+#modifierlivreadmin
+{
+    display:flex;
+    justify-content:center;
+    justify-items: baseline;
+    padding: 40px 0px 80px 0px;
+    background-color: white;
+    box-shadow: 2px 3px 7px #121212;
+    transition: 0.5s ease;
+}
+
+#modifierlivreadmin form.form-modifierlivre
+{
+    width: 300px;
+    display: inline-block;
+    justify-content:center;
+    flex-wrap: wrap;
+    min-width: fit-content;
+    padding: 20px 15px;
+    border: 1px solid #E3E6F3;
+    border-radius: 25px;
+    box-shadow: 0px 20px 34px #12121216;
+    margin: 20px 20px;
+    transition: 0.3s ease;
+    background-color: white;
+}
+#modifierlivreadmin .form-groupemodifierlivre
+{
+    max-width: 400px;
+    height: fit-content;
+    align-items: center;
+    justify-content: left;
+    margin: 10px 20px;
+    padding: 20px;
+    min-width: fit-content;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+#modifierlivreadmin .form-groupemodifierlivre#fichierimagelivre
+{
+    width: 25%;
+    align-items: center;
+    justify-content: left;
+    margin: 10px 20px;
+    padding: 20px;
+    min-width: fit-content;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+#modifierlivreadmin .form-groupemodifierlivre label
+{
+    text-align: left;
+    padding-bottom: 30px;
+    min-width: 50%;
+    font-size: 16px;
+    font-weight: 700;
+    width: 350px;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    color: #999999;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+#modifierlivreadmin .form-groupemodifierlivre input.form-livre
+{
+    font-size: 12px;
+    width: 100%;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#modifierlivreadmin .form-groupemodifierlivre input.form-livre:hover
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#modifierlivreadmin .form-groupemodifierlivre input.form-livre:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+
+#modifierlivreadmin .form-groupemodifierlivre input[type="file"]
+{
+    font-size: 12px;
+    width: 100%;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+
+#modifierlivreadmin .form-groupemodifierlivre input#datepublicationlivre
+{
+    font-size: 12px;
+    width: 50%;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#modifierlivreadmin .form-groupemodifierlivre input#datepublicationlivre:hover
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#modifierlivreadmin .form-groupemodifierlivre input#datepublicationlivre:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+#modifierlivreadmin .form-groupemodifierlivre textarea#resumelivre
+{
+    font-size: 12px;
+    width: 50%;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+
+#modifierlivreadmin .form-groupemodifierlivre textarea#resumelivre:hover
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#modifierlivreadmin .form-groupemodifierlivre textarea#resumelivre:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+
+#modifierlivreadmin .form-groupemodifierlivre select#disponibilite,
+#modifierlivreadmin .form-groupemodifierlivre option#disponibilite
+{
+    font-size: 12px;
+    width: 50%;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#modifierlivreadmin .form-groupemodifierlivre select#disponibilite:hover,
+#modifierlivreadmin .form-groupemodifierlivre option#disponibilite:hover
+
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#modifierlivreadmin .form-groupemodifierlivre select#disponibilite:focus,
+#modifierlivreadmin .form-groupemodifierlivre option#disponibilite:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+
+#modifierlivreadmin .form-groupemodifierlivre select#disponibilitepdf,
+#modifierlivreadmin .form-groupemodifierlivre option#disponibilitepdf
+{
+    font-size: 12px;
+    width: 50%;
+    letter-spacing: 2px;
+    color: #999999;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #E3E6F3;
+    border-radius: 3px;
+    font-weight: 500;
+    font-family: 'Raleway';
+    transition: 0.3s;
+}
+#modifierlivreadmin .form-groupemodifierlivre select#disponibilitepdf:hover,
+#modifierlivreadmin .form-groupemodifierlivre option#disponibilitepdf:hover
+
+{
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 7px #12121216;
+}
+#modifierlivreadmin .form-groupemodifierlivre select#disponibilitepdf:focus,
+#modifierlivreadmin .form-groupemodifierlivre option#disponibilitepdf:focus
+{
+    letter-spacing: 2px;
+    border: 2px solid #E3E6F3;
+    outline: none;
+}
+#modifierlivreadmin button.submit-livre
+{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #12c757;
+    padding-top: 12px;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #12c757;
+    border-radius: 2px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: 0.5s;
+    cursor:pointer;
+}
+#modifierlivreadmin button.submit-livre:hover
+{
+    color: white;
+    transform: scale(120%);
+    font-weight: 900;
+    letter-spacing: 5px;
+    background-color: #12c757;
+    border-radius: 12px;
+    box-shadow: 0px 7px 12px #12c757;
+    text-shadow: 1px 2px 7px  #121212;
+}
+
+
+#modifierlivreadmin .modifierlivre
+{
+    width: 30%;
+    height: fit-content;
+    text-align:start;
+    padding: 20px 15px;
+    border: 1px solid #E3E6F3;
+    border-radius: 25px;
+    box-shadow: 0px 20px 34px #12121216;
+    margin: 20px 20px;
+    background-color: white;
+}
+
+#modifierlivreadmin .modifierlivre img
+{
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#modifierlivreadmin .modifierlivre .modifierlivrevision
+{
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0px;
+}
+#modifierlivreadmin .modifierlivre .modifierlivrevision span
+{
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #999999;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    
+}
+#modifierlivreadmin .modifierlivre .modifierlivrevision h5
+{
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 10px;
+}
+#modifierlivreadmin .modifierlivre .modifierlivrevision p
+{
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #121212;
+    margin-bottom: 10px;
+}
+#modifierlivreadmin .modifierlivre .modifierlivrevision button.modifierlivrevision.disponible
+{
+    
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    width: fit-content;
+    padding: 20px;
+    color: white;
+    border: none;
+    margin: 30px 0px;
+    text-shadow: 1px 2px 7px #121212;
+    background-color: #12c757;
+}
+#modifierlivreadmin .modifierlivre .modifierlivrevision a.modifierlivrevision.telechargeable
+{   
+    font-size: 16px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    width: fit-content;
+    padding: 20px;
+    text-shadow: 1px 2px 7px #121212;
+    background-color: #1246f1;
+}
